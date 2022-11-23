@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+        o = ["st","nd","rd", "th"];
+        txt ="";
+        for (let i =0; i <7; i++){
+            if (i<4){
+                let j = i + 1;
+                txt += j + o[i] + " choice is " +color[i] +"<br>";
+            } else if (i>=4){
+                txt += (i+1) + o[3] + " choice is " +color[i] +"<br>";
+            }  
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+
+    </script>
+</body>
+</html>
